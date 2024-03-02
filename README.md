@@ -1,1 +1,4 @@
-# mini-addu-sis
+# Developed by:
+# DOBLI, FERDINAND JOHN F.
+# QUANZON, EDWARD ANTHONY R.
+# LANAJA, CHRIS LAWRENCE J.
