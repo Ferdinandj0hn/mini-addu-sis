@@ -113,7 +113,7 @@ const list = [
     s: "40",
     r: "0",
     e: "7",
-    sched: "* 12:25P-1:55P F610 MW * 1:00P-3:00P F610 F *",
+    sched: "* 12:25P-1:55P F612 MW * 1:00P-3:00P F612 F *",
     teacher: "CANALE, JERRY",
     section: "",
     enrollable: "Yes",
