@@ -1,6 +1,7 @@
  body {
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
- }
+}
+
 .grade-button {
     display: flex;
     align-items: center;
