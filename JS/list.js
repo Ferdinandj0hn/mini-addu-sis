@@ -9,7 +9,7 @@ const list = [
     r: "0",
     e: "34",
     sched: "* 5:50P-7:20P F605 MW * 5:50P-7:50P F605 F *",
-    teacher: "LUMAPAS, RAUL VINENT",
+    teacher: "LUMAPAS, RAUL VINCENT",
     section: "InTech 1-C, InfoSys 1-A",
     enrollable: "Yes",
     unblocked: "Yes",
@@ -90,7 +90,7 @@ const list = [
     unblocked: "Yes",
   },
   {
-    code: "4-104",
+    code: "4-106",
     subject: "IT 2243",
     name: "IT ELECTIVE 1 ",
     division: "CS",
@@ -105,7 +105,7 @@ const list = [
     unblocked: "Yes",
   },
   {
-    code: "4-104",
+    code: "4-105",
     subject: "IT 2243",
     name: "IT ELECTIVE 1 ",
     division: "CS",
