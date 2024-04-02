@@ -1,97 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY GRADES | STUDENT INFORMATION SYSTEM</title>
-    <link rel="icon" href="./images/adduicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/grades.css" />
-  </head>
-  <body>
-    <header>
-      <div>
-        <img class="logo" src="./images/addu_2.png" />
-        <h1 class="sis">STUDENT INFORMATION SYSTEM</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY GRADES | STUDENT INFORMATION SYSTEM</title>
+  <link rel="icon" href="./images/adduicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-        <h4 class="addu">ATENEO DE DAVAO UNIVERSITY</h4>
-      </div>
-      <nav role="navigation">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="grades.html">My Grades</a></li>
-          <li><a href="submit.html">Submit Grade</a></li>
-          <li><a href="list.html">Course List</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="space"></div>
-    <table id="table1">
-      <tr>
-        <th><b>Card No:</b></th>
-        <td>15505304</td>
-        <th><b>Course:</b></th>
-        <td>BS-IT</td>
-        <th><b>Year:</b></th>
-        <td>2</td>
-      </tr>
+<body>
+  <header class="bg-blue-800 p-4 relative">
+    <img class="logo absolute w-24 h-20" src="./images/addu_2.png" />
+    <h1 class="sis ml-32 mt-6 mb-2 text-white text-2xl" style="margin-right: 5px;">STUDENT INFORMATION SYSTEM</h1>
+    <h4 class="addu ml-64 mt-4 text-white text-left" style="margin-left: 130px;">ATENEO DE DAVAO UNIVERSITY</h4>
+    <nav class="hidden sm:flex justify-between items-center bg-blue-800 py-4 px-6">
+      <ul class="flex space-x-6 text-white">
+        <li class="hover:text-blue-500 transition duration-300"><a href="home.html">HOME</a></li>
+        <li class="hover:text-blue-500 transition duration-300"><a href="grades.html">MY GRADES</a></li>
+        <li class="hover:text-blue-500 transition duration-300"><a href="submit.html">SUBMIT GRADE</a></li>
+        <li class="hover:text-blue-500 transition duration-300"><a href="list.html">COURSE LIST</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <tr>
-        
-        <th><b>ID No:</b></th>
-        <td>128848</td>
-        <th><b>Section:</b></th>
-        <td>InTech 2-B</td>
-        <th><b>Credit Units:</b></th>
-        <td>3.00</td>
-        </tr>
+  <div class="space"></div>
+  <table class="table-fixed w-full mt-4 border">
+    <tbody id="studentInfoTable"></tbody>
+  </table>
+  
+  <main class="mt-8">
+    <section class="grades">
+      <h2 class="mt-8 text-2xl font-bold" style="margin-left: 30px;">My Grades</h2>
+      <table class="w-full">
+        <thead id="gradesTable"></thead>
+        <tbody id="gradesTableBody"></tbody>
+      </table>
+    </section>
+  </main>
 
-      <tr>
-        <th><b>Name:</b></th>
-        <td>FERDINAND, EDWARD LAWRENCE</td>
-        <th><b>Division:</b></th>
-        <td>CS</td>
-        <th><b>Status:</b></th>
-        <td><b>ENROLLED</b></td>
-      </tr>
-
-      <tr>
-        <th><b>Semester:</b></th>
-        <td>2nd Semester, 2023-2024</td>
-        <th><b>Curriculum Year:</b></th>
-        <td>2019</td>
-        <th><b>OLD STUDENT/REGULAR</b></th>
-      </tr>
-
-      <tr>
-        <th></th>
-        <td></td>
-        <th><b>Max Load:</b></th>
-        <td>24</td>
-        <th><b>Annual QPI:</b></th>
-        <td>4</td>
-      </tr>
-    </table>
-    
-    <main>
-      <section class="grades">
-        <h2>My Grades</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th>DESCRIPTIVE TITLE</th>
-              <th>PRELIM</th>
-              <th>MIDTERM</th>
-              <th>PRE-FINAL</th>
-              <th>FINAL</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </section>
-    </main>
-
-    <script src="./JS/grades.js"></script>
-  </body>
+  <script src="./JS/grades.js"></script>
+</body>
 </html>

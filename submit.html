@@ -1,49 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUBMIT LIST | STUDENT INFORMATION SYSTEM</title>
+    <title>SUBMIT | STUDENT INFORMATION SYSTEM</title>
     <link rel="icon" href="./images/adduicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/submit.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div>
-            <img class="logo" src="./images/addu_2.png" />
-            <h1 class="sis">STUDENT INFORMATION SYSTEM</h1>
-            <h4 class="addu">ATENEO DE DAVAO UNIVERSITY</h4>
-        </div>
-        <nav role="navigation">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="grades.html">My Grades</a></li>
-                <li><a href="submit.html">Submit Grade</a></li>
-                <li><a href="list.html">Course List</a></li>
+
+<body class="font-sans">
+    <header class="bg-blue-800 p-4 relative">
+        <img class="logo absolute w-24 h-20" src="./images/addu_2.png" />
+        <h1 class="sis ml-32 mt-6 mb-2 text-white text-2xl" style="margin-right: 5px;">STUDENT INFORMATION SYSTEM</h1>
+        <h4 class="addu ml-64 mt-4 text-white text-left" style="margin-left: 130px;">ATENEO DE DAVAO UNIVERSITY</h4>
+        <nav class="hidden sm:flex justify-between items-center bg-blue-800 py-4 px-6">
+            <ul class="flex space-x-6 text-white">
+              <li class="hover:text-blue-500 transition duration-300"><a href="home.html">HOME</a></li>
+              <li class="hover:text-blue-500 transition duration-300"><a href="grades.html">MY GRADES</a></li>
+              <li class="hover:text-blue-500 transition duration-300"><a href="submit.html">SUBMIT GRADE</a></li>
+              <li class="hover:text-blue-500 transition duration-300"><a href="list.html">COURSE LIST</a></li>
             </ul>
         </nav>
     </header>
-
-    <h1> </h1>
     
-    <table id="submitList">
-        <thead>
-            <tr>
-                <th>CODE</th>
-                <th>STUDENT NAME</th>
-                <th>FINAL</th>
-                <th>GRD. TYPE</th>
-                <th>YEAR LVL</th>
-                <th>ACAD. STATUS</th>
-                <th>YEAR OF ENTRY</th>
-                <th>ENTRY YEAR LEVEL</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-        <tfoot></tfoot>
-    </table>
+    <table class="w-full mt-8 mx-auto" id="submitList"></table>
     <script src="./JS/submit.js"></script>
 </body>
 </html>
